@@ -5,6 +5,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -13,17 +16,21 @@
         <title>Birthday Fact</title>
     </head>
 
-    <body class="">
-        <div class="container">
-            <form id="form">
-                <p>Enter your date of birth:</p>
-                <label for="month">Month: </label>
-                <input type="number" name="month" id="month">
-                <label for="day">Day: </label>
-                <input type="number" name="day" id="day">
-                <button type="submit" id="submit">Submit</button>
-            </form>
-            <p id="text">Placeholder text</p>
+    <body>
+        <div class="jumbotron vertical-center">
+            <div class="container">
+                <div class="content">
+                    <form id="form" class="d-flex flex-column align-items-center">
+                        <p>Enter your date of birth and I will tell you an interesting fact about your birthday:</p>
+                        <input type="number" name="month" id="month" placeholder="month">
+                        <br>
+                        <input type="number" name="day" id="day" placeholder="day">
+                        <br>
+                        <button type="submit" id="submit">Submit</button>
+                    </form>
+                    <p id="text"></p>
+                </div>
+            </div>
         </div>
         <script src="script.js"></script>
     </body>
